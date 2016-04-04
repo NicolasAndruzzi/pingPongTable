@@ -1,12 +1,12 @@
 # Capstone Project - Deployed Link
 ---
 
-* Project Proposal
+### Project Proposal
 ---
 I would like to make the ping pong table at Galvanize an internet of things ping pong table.  I will be able to do so by adding electro-mechanical components to the physical table for users to interact with AND by creating two separately deployed websites that will interact with both the electro-mechanical components and the users.
 
 
-* Technologies
+### Technologies
 ---
 - PostgreSQL
 - Express
@@ -18,12 +18,11 @@ I would like to make the ping pong table at Galvanize an internet of things ping
 - Bootstrap (functionality for tablet and mobile intended)
 
 
-* MVP goals
+### MVP goals
 ---
 On the table:
 - Two pushbuttons for each player (increment and decrement score) for a total of 4 buttons
 - Two 4 digit LEDs, one for each player.  Each will show your 2 digit score and your opponent's 2 digit score
-^^^^^^^Harder than it sounds...
 
 On the web:
 - A deployed Angular app that users will be able to interact with to:
@@ -36,7 +35,7 @@ On the web:
     - Listen for updates on button presses on the table and update the database accordingly
 
 
-* Stretch goals
+### Stretch goals
 ---
 Table stretch goals:
     - Connect a touch-screen to the Raspberry Pi on the table, which would allow users to sign up for next without needing their own laptops or phones
