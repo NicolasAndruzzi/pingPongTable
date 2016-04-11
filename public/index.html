@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="pingPong">
   <head>
     <meta charset="utf-8">
     <title>pingPongTable</title>
-    <!-- Favicon icons (web, android, microsoft, and iOS apps)-->
+    <!-- CSS normalizer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- Favicon icons (web, android, microsoft, and iOS apps) -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
@@ -21,16 +23,58 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Latest compiled and minified CSS (Bootstrap)-->
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS (Bootstrap) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme (Bootstrap)-->
+    <!-- Optional theme (Bootstrap) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   </head>
   <body>
-    {{4+1}}
-    <!-- Latest compiled and minified JavaScript (Angular)-->
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#/"><img id="navbar-brand-logo" src="images/golden-48127.svg" alt="Score Boar Logo" /></a>
+            <a class="navbar-brand" href="#/">The Score Boar</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/">On The Table</a></li>
+              <li><a href="#/liveStream">Live Stream</a></li>
+              <li><a href="#/scores">Scores</a></li>
+              <li><a href="#/about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      {{11+8}}
+      <div ng-view></div>
+    </main>
+    <!-- Latest compiled and minified JavaScript (Angular) -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
-    <!-- Latest compiled and minified JavaScript (Bootstrap)-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+    <!-- Javascripts -->
+    <script type="text/javascript" src="javascripts/app.js"></script>
+    <script type="text/javascript" src="javascripts/controllers/OnTheTableController.js"></script>
+    <script type="text/javascript" src="javascripts/controllers/liveStreamController.js"></script>
+    <script type="text/javascript" src="javascripts/controllers/scoresController.js"></script>
+    <script type="text/javascript" src="javascripts/controllers/aboutController.js"></script>
+    <script type="text/javascript" src="javascripts/services/main_service.js"></script>
+    <!-- jQuery (for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript (Bootstrap) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
