@@ -27,3 +27,7 @@ main{
   height: 100vh;
   width: 100vw;
 }
+
+#shift{
+  margin-top: 100px;
+}
