@@ -18,10 +18,10 @@ var playerTwoScore = 0;
 
 router.get('/scores/:playerID/:amount', function(req, res, next) {
   if(req.params.playerID == 1) {
-    playerOneScore += req.params.amount
+    playerOneScore += parseInt(req.params.amount)
   }
   if(req.params.playerID == 2) {
-    playerTwoScore += req.params.amount
+    playerTwoScore += parseInt(req.params.amount)
   }
   res.send(200);
 });
