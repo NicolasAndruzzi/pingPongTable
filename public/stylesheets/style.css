@@ -10,3 +10,8 @@
 main{
   padding-top: 50px;
 }
+
+#splashImg{
+  height: 90vh;
+  width: 100vw;
+}

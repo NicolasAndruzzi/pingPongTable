@@ -3,6 +3,10 @@ var app = angular.module('pingPong', ['ngRoute'])
 app.config(function($routeProvider) {
   $routeProvider
   .when('/', {
+    templateUrl: 'views/splash.html',
+    controller: 'splashController'
+  })
+  .when('/onTheTable', {
     templateUrl: 'views/onTheTable.html',
     controller: 'OnTheTableController'
   })
