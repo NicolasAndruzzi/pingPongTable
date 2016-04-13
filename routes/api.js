@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex')
+var io = require('../io')
 var playerOneScore = 0;
 var playerTwoScore = 0;
 
@@ -16,6 +17,10 @@ var playerTwoScore = 0;
 //   })
 // });
 
+io.on("connection", function (socket) {
+  socket.emit("scores", {playerOneScore, playerTwoScore})
+})
+
 router.get('/scores/:playerID/:amount', function(req, res, next) {
   if(req.params.playerID == 1) {
     playerOneScore += parseInt(req.params.amount)
@@ -23,6 +28,7 @@ router.get('/scores/:playerID/:amount', function(req, res, next) {
   if(req.params.playerID == 2) {
     playerTwoScore += parseInt(req.params.amount)
   }
+  io.emit("scores", {playerOneScore, playerTwoScore})
   res.send(200);
 });
 

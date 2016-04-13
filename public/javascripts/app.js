@@ -1,5 +1,10 @@
 var app = angular.module('pingPong', ['ngRoute'])
 
+app.factory("socket", function () {
+  var socket = io()
+  return socket
+})
+
 app.config(function($routeProvider) {
   $routeProvider
   .when('/', {
@@ -8,7 +13,7 @@ app.config(function($routeProvider) {
   })
   .when('/onTheTable', {
     templateUrl: 'views/onTheTable.html',
-    controller: 'OnTheTableController'
+    controller: 'onTheTableController'
   })
   .when('/liveStream', {
     templateUrl: 'views/liveStream.html',
