@@ -19,7 +19,7 @@ var playerTwoScore = 0;
 
 io.on("connection", function (socket) {
   socket.emit("scores", {playerOneScore, playerTwoScore})
-})
+});
 
 router.get('/scores/:playerID/:amount', function(req, res, next) {
   if(req.params.playerID == 1) {
