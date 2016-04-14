@@ -16,8 +16,8 @@ main{
 }
 
 #splashImg{
-  height: 50vh;
-  /*width: 50vw;*/
+  /*height: 50vh;*/
+  width: 40vw;
 }
 
 #splashTxt{
