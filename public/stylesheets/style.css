@@ -11,11 +11,13 @@ main{
   padding-top: 50px;
 }
 
+.container{
+  text-align: center;
+}
+
 #splashImg{
-  height: 60vh;
-  width: 60vw;
-  margin-left: 20vw;
-  margin-top: 2.5vh;
+  height: 50vh;
+  /*width: 50vw;*/
 }
 
 #splashTxt{
