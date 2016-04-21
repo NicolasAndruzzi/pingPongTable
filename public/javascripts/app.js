@@ -8,7 +8,7 @@ app.factory("socket", function () {
 app.config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'views/splash.html',
+    templateUrl: 'views/about.html',
     controller: 'splashController'
   })
   .when('/onTheTable', {
