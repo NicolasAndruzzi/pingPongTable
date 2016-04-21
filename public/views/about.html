@@ -8,7 +8,7 @@
   </div>
   <h4>Part 1: The Web App</h4>
   <div class="">
-    The Score Boar was built using an Express back end utelizing a custom API.  It uses Angular on the front end in conjunction with Bootstrap(so the site will work on all mobile devices and tablets).  Also, web sockets were implemented so the back end can communicate with the front end in real time.
+    The Score Boar was built using an Express back end utilizing a custom API.  It uses Angular on the front end in conjunction with Bootstrap(so the site will work on all mobile devices and tablets).  Also, web sockets were implemented so the back end can communicate with the front end in real time.
   </div>
   <h4>Part 2: The Hardware</h4>
   <div class="">
@@ -29,7 +29,7 @@
     A touch-screen at the center of the table that is running The Score Boar website on it.  Behind this touch-screen is a Raspberry Pi which all of the components are connected to and is the 'brains' of the hardware.  This Raspberry Pi is also what allows my hardware to talk to my web app.
   </div>
   <img src="/images/screen.jpg" alt="" style="width: 50vw;"/>
-  <img src="/images/pi.jpg" alt="" style="width: 50vw;"/>  
+  <img src="/images/pi.jpg" alt="" style="width: 50vw;"/>
 <h1>How does it work?</h1>
   <div class="">
     every time a button is pressed, the Pi sends different specialized http requests to my custom Express API.  In the express backend I keep track of these button presses and am able to calculate the score.  These scores are then displayed in real time (thanks to web sockets) to my Angular front end which users are able to see.
@@ -47,7 +47,7 @@
   <div class="">
     I am also working on adding a second Raspbery Pi with a camera module to take a picture of the table every 5 seconds or so.  This will allow you to judge how crowded the ping-pong table is without having to go to the table to check it out.
   </div>
-  <img src="" alt="" />
+  <img src="/images/placeholder_liveStream.jpg" alt="" style="width: 50vw;"/>
 <h1>Contact Me</h1>
   <h4>I am always looking for constructive criticism and especially for any ideas on how to improve the user experience from any member of the Galvanize community!!</h4>
-  <h4>If you have either, or just a question about the table, feel free to contact me (Nico Andruzzi) at NicolasAndruzzi@gmail.com</h4>
+  <h4>If you have either, or just a question about the table, feel free to contact me (<a href="http://www.nightowlnico.com/" target="_blank">Nico Andruzzi</a>) at NicolasAndruzzi@gmail.com</h4>
