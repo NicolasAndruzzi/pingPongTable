@@ -8,21 +8,21 @@ app.factory("socket", function () {
 app.config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'views/about.html',
+    templateUrl: 'views/splash.html',
     controller: 'splashController'
   })
   .when('/onTheTable', {
     templateUrl: 'views/onTheTable.html',
     controller: 'onTheTableController'
   })
-  .when('/liveStream', {
-    templateUrl: 'views/liveStream.html',
-    controller: 'liveStreamController'
-  })
-  .when('/scores', {
-    templateUrl: 'views/scores.html',
-    controller: 'scoresController'
-  })
+  // .when('/liveStream', {
+  //   templateUrl: 'views/liveStream.html',
+  //   controller: 'liveStreamController'
+  // })
+  // .when('/scores', {
+  //   templateUrl: 'views/scores.html',
+  //   controller: 'scoresController'
+  // })
   .when('/about', {
     templateUrl: 'views/about.html',
     controller: 'aboutController'
